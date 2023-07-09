@@ -1,29 +1,32 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "How to handle histograms over time"
 date:   2023-07-08 20:22:33 +0200
-categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+When we need to visualize the distribution of individual values, the well-known histogram can be used. If we add a third dimension in the form of time, such a visualization can be complex. 
 
-`YEAR-MONTH-DAY-title.MARKUP`
+While writing a paper on network traffic analysis I had to deal with the problem of histogram in time. I chose the solution using the so-called heatmap. This is basically a general way of visualization, where we divide the X and Y axes into arbitrary intervals, which creates a defacto 2D array - a good example of a heatmap can be e.g. a confusion matrix.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+In the X-axis we assume some time, in the Y-axis we will sweep individual bins. The bin value itself will then be visualized by color. I'm making the python code available. Consider it a pseudo-code, there are a lot of things and context missing, but the principle of creation is correct. 
 
-Jekyll also offers powerful support for code snippets:
+Assume we have single histograms in `hist_duration` column as array. [The source of the data.](https://zenodo.org/record/8053021)
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+```python
+tmp_ = df[["time", "hist_duration"]]
+df_ = pd.DataFrame()
+df_["time"] = tmp_["time"]
+for i in range(22):
+    df_[(2**i)] = tmp_['hist_duration'].apply(lambda x: x[i]) # i know i have 22 bins, 2**i means my bins are log scaled
+df_ = pd.melt(df_, id_vars=["time"]).pivot(index="variable", columns="time", values="value")
+ax = sns.heatmap(df_[:-2:], robust=True, cmap='Spectral_r')
+ax.invert_yaxis()
+```
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+With customazing the axis, we then obtain something like this:
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+![histogram](/assets/histogram.png)
+
+We see that the magnitude is in lowest bin with light increase around bin 128ms, so we can estimate that distribution as something like Pareto or Pareto-normal. That is much out of scope of this post but it shows how this kind of visualization can be helpful.
+
+

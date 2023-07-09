@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+  <style>
+    .wrapper.flex-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .sidebar {
+      flex: 1;
+      margin-right: 10px;
+      /* Adjust width, padding, margin, etc. here */
+    }
+
+    .content {
+      flex: 2;
+      max-width: 95%;
+      margin-left: 10px;
+      /* Adjust padding, margin, etc. here */
+    }
+  </style>
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper flex-container">
+        <div class="sidebar">
+
+          <h2>{{page.column_title}}</h2>
+          <img src={{page.picture}} style="margin-bottom: 10px;">
+
+          <ul class="social-media-list">
+            {%- for entry in site.social -%}
+              {%- include social-item.html item = entry -%}
+            {%- endfor -%}
+          </ul>
+
+        </div>
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

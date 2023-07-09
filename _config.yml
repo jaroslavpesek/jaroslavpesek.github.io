@@ -18,16 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Jaroslav Pesek
+email: jaroslav.pesek@fit.cvut.cz
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 theme: minima
@@ -53,3 +49,18 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+header_pages:
+  - index.md
+  - academia.md
+  - teaching.md
+  - blog.md
+
+social:
+  - { username: jaroslav.pesek@fit.cvut.cz, platform: mail, user_url: "mailto:jaroslav.pesek@fit.cvut.cz" }  
+  - { username: jaroslavpesek, platform: github, user_url: "https://github.com/jekyll/jaroslavpesek" }
+  - { username: 0000-0003-1634-9779, platform: orcid,        user_url: "https://orcid.org/0000-0003-1634-9779" }
+  - { username: jaroslav-pesek, platform: linkedin,       user_url: "https://www.linkedin.com/in/jaroslav-pesek" }
+  - { username: jp3s3k, platform: twitter,        user_url: "https://twitter.com/jp3s3k" }
+
+show_excerpts: true
