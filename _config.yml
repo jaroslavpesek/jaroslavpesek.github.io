@@ -58,7 +58,7 @@ header_pages:
 
 social:
   - { username: jaroslav.pesek@fit.cvut.cz, platform: mail, user_url: "mailto:jaroslav.pesek@fit.cvut.cz" }  
-  - { username: jaroslavpesek, platform: github, user_url: "https://github.com/jekyll/jaroslavpesek" }
+  - { username: jaroslavpesek, platform: github, user_url: "https://github.com/jaroslavpesek" }
   - { username: 0000-0003-1634-9779, platform: orcid,        user_url: "https://orcid.org/0000-0003-1634-9779" }
   - { username: jaroslav-pesek, platform: linkedin,       user_url: "https://www.linkedin.com/in/jaroslav-pesek" }
   - { username: jp3s3k, platform: twitter,        user_url: "https://twitter.com/jp3s3k" }
