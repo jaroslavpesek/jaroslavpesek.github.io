@@ -4,4 +4,4 @@ title: Teaching
 permalink: /teaching/
 ---
 
-Tbd. Stay tuned, rabbits.
+## NI-KOP Winter 2023
