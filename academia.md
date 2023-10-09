@@ -15,6 +15,21 @@ permalink: /academia/
 
  - J. Pešek, D. Soukup, and Tomáš Čejka, *Vision of Active Learning Framework Approach to Network Traffic Analysis Research*, Proceedings of the 10th Prague Embedded Systems Workshop, 2022, [LINK](https://pesw.fit.cvut.cz/2022/PESW_2022.pdf)
 
+## In review process
+
+ - J. Koumar, K. Hynek, J. Pesek, and T. Cejka, NetTiSA: Extended IP Flow with Time-series Features for Universal Bandwidth-constrained High-speed Network Traffic Classification, Computer Networks
+ 
+ - T. Benes, J. Pesek, T. Cejka, The case study on high-speed ISP network measurement with scalar aggregation, NOMS 2024
+
+## What I am working on right now
+
+ - Per day dataset balancing for optimal predictive model performance
+
+ - Model maintenence path in network traffic classification (using active learning)
+
+ - Optimizing of flow cache in flow exporter
+
+
 ## Service
  - Student Poster Session Co-Chair at [PESW 2023](https://pesw.fit.cvut.cz/2023/index.php?page=Committees)
 
