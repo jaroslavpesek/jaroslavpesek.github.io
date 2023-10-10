@@ -5,7 +5,7 @@ column_title: About
 picture: pic.jpg
 ---
 
-## About
+##
 
 I am Jaroslav, a PhD student in the [Netmon](https://netmon.fit.cvut.cz) research group. We work in the field of network traffic monitoring and analysis. Right now, I am primarily interested in scalable monitoring infrastructure (with custom FPGA, DPDK technology, etc.), statistics in the field of computer networks and the application of machine learning in the same field. I also teach (Computer Networks and Applications with Arduino for undergrads, Combinatorial Optimization for masters). IEEE member in Czechoslovakia section. 
 
