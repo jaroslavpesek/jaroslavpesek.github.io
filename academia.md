@@ -5,7 +5,9 @@ permalink: /academia/
 ---
 
 ## Publications, talks
- - T. Benes, J. Pešek, and Tomáš Čejka, *How to measure high-speed network: a case study*, Proceedings of the 11th Prague Embedded Systems Workshop, 2023, [LINK](https://pesw.fit.cvut.cz/2023/PESW_2023.pdf), **abstract for submitted paper and talk, not peer reviewed**
+ - T. Benes, J. Pesek, and T. Cejka, *Look at my Network: An insight into the ISP Backbone Traffic*, 19th International Conference on Network and Service Management (CNSM), 2023
+ - 
+ - T. Benes, J. Pešek, and T. Čejka, *How to measure high-speed network: a case study*, Proceedings of the 11th Prague Embedded Systems Workshop, 2023, [LINK](https://pesw.fit.cvut.cz/2023/PESW_2023.pdf), **abstract for submitted paper and talk, not peer reviewed**
 
  - J. Pesek, R. Plny, J. Koumar, K. Jeřábek, and T. Cejka, *Augmenting Monitoring Infrastructure For Dynamic Software-Defined Networks*, 2023 8th International Conference on Smart and Sustainable Technologies, 2023, [LINK]()
 
