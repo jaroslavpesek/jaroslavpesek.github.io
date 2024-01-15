@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "AI for network traffic classification workshop NECS 2024"
+date:   2024-01-14 19:30:00 +0200
+---
+
+At the breathtaking Cortina d'Ampezzo in Italy, a place etched in history for hosting the 1956 Winter Olympics and soon the 2026 games, my colleagues and I led an workshop during the [winter PhD school NECS 2024](https://necs-winterschool.disi.unitn.it/). The workshop was attended by approx. 15 people, mostly PhD students and researchers. 
+
+We split our session into two parts. Initially, we delved into the basics of data analysis, exploring the explorative data analysis in pandas, distribution estimation, and more. The main story happened in the second part, where we discussed and practicioned the topic of network traffic classification in general and the possibilities of using AI in this area. The workshop was very successful and we are already planning to organize a similar workshop in the near feature. An important part of the workshop was the introduction of [`cesnet-datazoo`](https://cesnet.github.io/cesnet-datazoo/), a python package for easy access to network traffic datasets ([Github](https://github.com/CESNET/cesnet-datazoo)).
+
+
+For those who missed it, worry not. The workshop is free for all, and we've made all materials accessible on [our shared drive](https://drive.google.com/drive/u/0/folders/10ECESlazevBJ4L6UhOpaC7l7SpKifS02).
+
+Thanks to all the participants and hope to see you next time! BTW, Cortina is a beautiful place.
+
+![necs1](/assets/necs-speakers.jpeg)
+
+![necs2](/assets/necs-me.jpeg)
