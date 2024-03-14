@@ -25,7 +25,7 @@ permalink: /academia/
 
  - K. Jerabek, J. Koumar, D. Poliakov, and J. Pesek, *Workshop on AI and traffic classification*, NECS – PhD Winter School, 2024, [LINK](https://necs-winterschool.disi.unitn.it/)
 
-## What I am working on right now (January 2024)
+## What I am working on right now (March 2024)
 
  - Per-day dataset balancing for optimal predictive model performance
  - Model maintenance path in network traffic classification (using active learning, etc.)
