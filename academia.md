@@ -40,9 +40,12 @@ permalink: /academia/
  - Student Poster Session Co-Chair at [PESW 2023](https://pesw.fit.cvut.cz/2023/index.php?page=Committees)
 
 ## Memberships
+
 ### Current
  - Researcher at [Network Traffic Monitoring Lab (Netmon)](https://netmon.fit.cvut.cz/en)
  - Member (PhD student) at [Digital Design Department](https://ddd.fit.cvut.cz) at [FIT CTU](https://fit.cvut.cz)
  - IEEE Student Branch, Czechoslovakia Section
+
  ### Past
+
  - Intern at [Fukuda Lab](http://www.fukuda-lab.org/en/research.html) (supervisor prof. Kensuke Fukuda March ~ September 2024)
