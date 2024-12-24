@@ -6,7 +6,7 @@ permalink: /academia/
 
 ## Publishing activity
 ### Conferences and journals
- - K. Hynek, J. Luxemburk, J. Pesek, T. Čejka, and Pavel Šiška, *CESNET-TLS-Year22: A year-spanning TLS network traffic dataset from backbone lines*, Nature Scientific Data, 2024, [LINK](https://www.nature.com/articles/s41597-024-03927-4)
+ - K. Hynek, J. Luxemburk, J. Pesek, T. Čejka, and P. Šiška, *CESNET-TLS-Year22: A year-spanning TLS network traffic dataset from backbone lines*, Nature Scientific Data, 2024, [LINK](https://www.nature.com/articles/s41597-024-03927-4)
  - D. Soukup, J. Pesek, L. Hejcman, D. Benes, and T. Cejka, *TCI: A system for distributed network monitoring, troubleshooting and dataset creation*, Proceedings of the 12th Prague Embedded Systems Workshop, 2024, [LINK](https://pesw.fit.cvut.cz/2024/PESW-2024_Proceedings.pdf), *abstract for submitted paper and talk, not peer-reviewed*
  - D. Soukup, J. Pesek, L. Hejcman, D. Benes, and T. Cejka, *TCI: A system for distributed network monitoring, troubleshooting and dataset creation*, 37th IEEE/IFIP Network Operations and Management Symposium (NOMS) - Experience Session, 2024
  - J. Koumar, K. Hynek, J. Pesek, and T. Cejka, *NetTiSA: Extended IP flow with time-series features for universal bandwidth-constrained high-speed network traffic classification*, Computer Networks, 2024, [LINK](https://doi.org/10.1016/j.comnet.2023.110147)
@@ -17,18 +17,25 @@ permalink: /academia/
  - J. Pešek, D. Soukup, and Tomáš Čejka, *Active Learning Framework to Automate Network Traffic Classification*, arXiv preprint arXiv:2211.08399, 2022, [LINK](https://arxiv.org/abs/2211.08399), *not peer-reviewed*
  - J. Pešek, D. Soukup, and Tomáš Čejka, *Vision of Active Learning Framework Approach to Network Traffic Analysis Research*, Proceedings of the 10th Prague Embedded Systems Workshop, 2022, [LINK](https://pesw.fit.cvut.cz/2022/PESW_2022.pdf)
 
+### Accepted, waiting for publication
+
+ - J. Pesek, K. Fukuda, and T. Cejka, *Interpretable Threat Detection with Evidential Classifier: The MQTT Case*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
+
+ - J. Koumar, J. Pesek, K. Jerabek, and T. Cejka, *Towards Building Network Outlier Detection System for Network Traffic Monitoring*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
+
 ### Submitted papers in the review process
 
- - J. Pesek, K. Fukuda, and T. Cejka, *Interpretable Threat Detection with Evidential Classifier: The MQTT Case*, NOMS 2025
+Nothing right now.
 
 ### Workshops, posters, etc.
 
  - K. Jerabek, J. Koumar, D. Poliakov, and J. Pesek, *Workshop on AI and traffic classification*, NECS – PhD Winter School, 2024, [LINK](https://necs-winterschool.disi.unitn.it/)
 
-## What I am working on right now (November 2024)
+ - J. Pesek, J. Koumar, and K. Jerabek, *Machine Learning in Network Service Classification Combat Data Drift*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
+
+## What I am working on right now (December 2024)
 
  - Interpretable and evidential use of ML in network security
- - Software co-design of Connection Tracking Table into flow exporter [ipfixprobe](https://github.com/CESNET/ipfixprobe)
  - Model maintenance path in network traffic classification (using active learning, etc.)
  - Scanning and Internet measurement
 
@@ -46,6 +53,6 @@ permalink: /academia/
  - Member (PhD student) at [Digital Design Department](https://ddd.fit.cvut.cz) at [FIT CTU](https://fit.cvut.cz)
  - IEEE Student Branch, Czechoslovakia Section
 
- ### Past
+### Past
 
  - Intern at [Fukuda Lab](http://www.fukuda-lab.org/en/research.html) (supervisor prof. Kensuke Fukuda March ~ September 2024)
