@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "A Smarter Approach to Cyber Threat Detection"
+date:   2025-01-02 15:30:00 +0200
+---
+
+In the age of connected systems and increasing cyber threats, it’s essential to have robust security solutions that not only detect threats but also explain their reasoning. False alarms can overwhelm security teams, leading to wasted time and missed opportunities to address real threats. This inspired us to develop a system that is not only accurate but also interpretable and transparent.
+
+During my six-month internship at the [National Institute of Informatics (NII)](http://www.fukuda-lab.org/en/research.html) in Tokyo, I had the privilege of working under the supervision of [Kensuke Fukuda](http://www.fukuda-lab.org/~kensuke/) at the Fukuda Laboratory. Below, I’ll introduce our approach and what it brings to the table.
+
+## What Makes Our Solution Unique?
+
+Traditional systems analyze data and make a single decision about whether something is a threat or not. This "all or nothing" approach can lead to errors, especially in uncertain situations. Our system takes a smarter path:
+
+1. **Set-Valued Decisions**: Instead of forcing a single decision, our system considers a range of possibilities, helping to better handle uncertainty.
+2. **Reject Option**: When the system isn’t confident, it can reject the decision, signaling the need for further investigation.
+3. **Interpretability**: Our system explains its decisions, showing the evidence that supports them, making it easier for analysts to trust and act on its outputs.
+
+## How It Works
+
+Our system is built on a combination of deep learning and the Dempster-Shafer Theory (DST), a mathematical framework for reasoning with uncertainty. By using DST, we can combine multiple pieces of evidence to make decisions that reflect the true complexity of cyber threats.
+
+One unique feature of our work is the ability to reject classifications when the system is unsure. This reduces the risk of false alarms and ensures only high-confidence decisions are forwarded for action.
+
+We also designed an original evaluation metric, **Mean Inverse Set Size Accuracy (MISSA)**, to fairly assess the performance of our approach. This metric rewards precise predictions while penalizing overly broad ones, encouraging both accuracy and confidence.
+
+## Why It Matters
+
+In cybersecurity, getting it right matters. A single missed threat or an overload of false alarms can have serious consequences. Here’s why our approach is a game-changer:
+
+- **Fewer False Alarms**: By rejecting uncertain decisions, we significantly reduce the noise in security alerts.
+- **Clear Insights**: Analysts gain a deeper understanding of potential threats through interpretable outputs.
+- **Adaptability**: While developed for specific use cases, this approach can be applied to various environments and protocols, ensuring broad utility.
+
+## Explore the Code
+
+To ensure transparency and reproducibility, we have made our code and configurations available to the public. You can explore our work and try it out yourself by visiting our repository on GitHub:
+
+👉 [Evidential Threat Detection for MQTT](https://github.com/fukuda-lab/evidential-threat-detection-mqtt)
+
+The repository includes:
+- Scripts for training and evaluation.
+- Preprocessing tools for preparing data.
+- Configurations to reproduce our experiments.
+
+The project and paper will be presented at the [2025 IEEE/IFIP Network Operations and Management Symposium (NOMS)](https://noms2025.ieee-noms.org/). If you’re attending, be sure to check out our session and say hello!
