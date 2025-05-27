@@ -6,6 +6,9 @@ permalink: /academia/
 
 ## Publishing activity
 ### Conferences and journals
+ - J. Pesek, K. Fukuda, and T. Cejka, *Interpretable Threat Detection with Evidential Classifier: The MQTT Case*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
+ - K. Jerabek, J. Koumar, J. Setinsky, and J. Pesek, Explainable Anomaly Detection in Network Traffic Using LLM, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
+ - J. Koumar, J. Pesek, K. Jerabek, and T. Cejka, *Towards Building Network Outlier Detection System for Network Traffic Monitoring*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
  - K. Hynek, J. Luxemburk, J. Pesek, T. Čejka, and P. Šiška, *CESNET-TLS-Year22: A year-spanning TLS network traffic dataset from backbone lines*, Nature Scientific Data, 2024, [LINK](https://www.nature.com/articles/s41597-024-03927-4)
  - D. Soukup, J. Pesek, L. Hejcman, D. Benes, and T. Cejka, *TCI: A system for distributed network monitoring, troubleshooting and dataset creation*, Proceedings of the 12th Prague Embedded Systems Workshop, 2024, [LINK](https://pesw.fit.cvut.cz/2024/PESW-2024_Proceedings.pdf), *abstract for submitted paper and talk, not peer-reviewed*
  - D. Soukup, J. Pesek, L. Hejcman, D. Benes, and T. Cejka, *TCI: A system for distributed network monitoring, troubleshooting and dataset creation*, 37th IEEE/IFIP Network Operations and Management Symposium (NOMS) - Experience Session, 2024
@@ -19,21 +22,19 @@ permalink: /academia/
 
 ### Accepted, waiting for publication
 
- - J. Pesek, K. Fukuda, and T. Cejka, *Interpretable Threat Detection with Evidential Classifier: The MQTT Case*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
-
- - J. Koumar, J. Pesek, K. Jerabek, and T. Cejka, *Towards Building Network Outlier Detection System for Network Traffic Monitoring*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
-
-### Submitted papers in the review process
-
 Nothing right now.
 
-### Workshops, posters, etc.
+### Workshops
+
+ - K. Jerabek, J. Koumar, and J. Pesek, *Machine Learning in Network Service Classification*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
+
+ - K. Jerabek, J. Koumar, J. Pesek, and J. Setinsky, *Workshop on AI and traffic classification*, NECS – PhD Winter School, 2025, [LINK](https://necs-winterschool.disi.unitn.it/)
 
  - K. Jerabek, J. Koumar, D. Poliakov, and J. Pesek, *Workshop on AI and traffic classification*, NECS – PhD Winter School, 2024, [LINK](https://necs-winterschool.disi.unitn.it/)
 
- - J. Pesek, J. Koumar, and K. Jerabek, *Machine Learning in Network Service Classification Combat Data Drift*, NOMS 2025, [LINK](https://noms2025.ieee-noms.org/)
 
-## What I am working on right now (December 2024)
+
+## What I am working on right now (May 2025)
 
  - Interpretable and evidential use of ML in network security
  - Model maintenance path in network traffic classification (using active learning, etc.)
