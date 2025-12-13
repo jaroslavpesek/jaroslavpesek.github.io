@@ -1,0 +1,9 @@
+{{/* Extended head partial to include custom CSS */}}
+{{/* PaperMod's head.html calls this partial, so we just add our extra content here */}}
+
+{{/* Include custom overrides CSS */}}
+{{ $overrides := resources.Get "css/overrides.css" }}
+{{ if $overrides }}
+{{ $overrides = $overrides | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $overrides.RelPermalink }}" integrity="{{ $overrides.Data.Integrity }}">
+{{ end }}

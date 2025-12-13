@@ -1,0 +1,98 @@
+{{- define "main" }}
+<div class="publications-page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ .Content }}
+
+  {{/* Get publications and extract years */}}
+  {{ $publications := .Site.Data.publications }}
+
+  {{/* First, extract all unique years */}}
+  {{ $yearSet := slice }}
+  {{ range $publications }}
+  {{ $year := "Unknown" }}
+  {{ with .issued }}
+  {{ $dateParts := index . "date-parts" }}
+  {{ if $dateParts }}
+  {{ range $dateParts }}
+  {{ $year = index . 0 | string }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  {{ if not (in $yearSet $year) }}
+  {{ $yearSet = $yearSet | append $year }}
+  {{ end }}
+  {{ end }}
+
+  {{/* Sort years descending */}}
+  {{ $years := sort $yearSet "value" "desc" }}
+
+  {{/* Render publications grouped by year */}}
+  {{ range $years }}
+  {{ $targetYear := . }}
+  <section class="publication-year">
+    <h2>{{ $targetYear }}</h2>
+    <ul class="publication-list">
+      {{ range $publications }}
+      {{/* Determine this item's year */}}
+      {{ $itemYear := "Unknown" }}
+      {{ with .issued }}
+      {{ $dateParts := index . "date-parts" }}
+      {{ if $dateParts }}
+      {{ range $dateParts }}
+      {{ $itemYear = index . 0 | string }}
+      {{ end }}
+      {{ end }}
+      {{ end }}
+
+      {{/* Only render if year matches */}}
+      {{ if eq $itemYear $targetYear }}
+      <li class="publication-item">
+        <div class="publication-content">
+          {{/* Authors */}}
+          <span class="publication-authors">
+            {{ $authors := slice }}
+            {{ range .author }}
+            {{ $name := printf "%s %s" (index . "given" | default "") (index . "family" | default "") }}
+            {{ $authors = $authors | append $name }}
+            {{ end }}
+            {{ delimit $authors ", " }}
+          </span>
+
+          {{/* Title */}}
+          <span class="publication-title">{{ .title }}</span>
+
+          <span class="publication-annote"> {{ .annote }}</span>
+
+          {{/* Venue */}}
+          {{ $containerTitle := index . "container-title" }}
+          {{ with $containerTitle }}
+          <span class="publication-venue">{{ . }}</span>
+          {{ end }}
+
+          {{/* Links */}}
+          <span class="publication-links">
+            {{ with .DOI }}
+            <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener"> {{ . }}</a>
+            {{ end }}
+            {{ with .URL }}
+            <a href="{{ . }}" target="_blank" rel="noopener">URL</a>
+            {{ end }}
+          </span>
+
+          {{/* Note */}}
+          {{ with .note }}
+          <span class="publication-note">{{ . }}</span>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+</div>
+{{- end }}

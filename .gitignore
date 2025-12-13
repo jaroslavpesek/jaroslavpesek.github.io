@@ -1,0 +1,11 @@
+# Ignore generated files
+site/data/publications.json
+result
+dist/
+.hugo_build.lock
+
+# Go module cache
+site/go.sum
+
+# OS files
+.DS_Store

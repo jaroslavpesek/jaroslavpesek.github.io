@@ -1,0 +1,65 @@
+baseURL = "https://jaroslavpesek.github.io/"
+languageCode = "en-us"
+title = "Jaroslav Pesek"
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+
+[params]
+  author = "Jaroslav Pesek"
+  description = "PhD candidate, network traffic monitoring and analysis, machine learning"
+  keywords = ["network security", "machine learning", "traffic classification", "research"]
+  
+  email = "jaroslav.pesek@fit.cvut.cz"
+  github = "jaroslavpesek"
+  linkedin = "jaroslav-pesek"
+  orcid = "0000-0003-1634-9779"
+  twitter = "jp3s3k"
+
+  defaultTheme = "light"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  disableThemeToggle = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "About"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/research/"
+    weight = 20
+  [[menu.main]]
+    identifier = "publications"
+    name = "Publications"
+    url = "/publications/"
+    weight = 30
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 40
+  [[menu.main]]
+    identifier = "articles"
+    name = "Posts"
+    url = "/articles/"
+    weight = 50
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[markup]
+  [markup.highlight]
+    style = "github"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
