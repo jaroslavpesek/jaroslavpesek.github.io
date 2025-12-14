@@ -93,6 +93,11 @@
   font-style: italic;
 }
 
+.bib-download {
+  font-size: 0.9rem;
+  color: var(--secondary, #777);
+}
+
 /* Page header */
 .page-header {
   margin-bottom: 2rem;
